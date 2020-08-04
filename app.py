@@ -5,10 +5,10 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-app.config['MYSQL_USER'] = 'c17420_sosijopu_na4u_ru'
+app.config['MYSQL_USER'] = 'c17420_sopu_na4u_ru'
 app.config['MYSQL_PASSWORD'] = 'GeTfoVefxobih80'
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_DB'] = 'c17420_sosijopu_na4u_ru'
+app.config['MYSQL_DB'] = 'c17420_sopu_na4u_ru'
 
 app.config['SECRET_KEY'] = 'Очень длинный рандомный секретный ключ'
 
