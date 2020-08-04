@@ -1,0 +1,25 @@
+body {
+font-family: "ZnikomitRegular";
+font-size: 20px
+min-width: 320 px
+position: relative
+}
+
+@font-face {
+            font-family: "ZnikomitRegular";
+            src: url("../fonts/ZnikomitRegular/ZnikomitRegular.eot");
+            src: url("../fonts/ZnikomitRegular/ZnikomitRegular.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/ZnikomitRegular/ZnikomitRegular.woff") format("woff"),
+            url("../fonts/ZnikomitRegular/ZnikomitRegular.ttf") format("truetype");
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+@font-face {
+            font-family: "YanoneKaffeesatz-VariableFont_wght";
+            src: url("../fonts/YanoneKaffeesatz-VariableFont_wght.ttf");
+            src: url("../fonts/YanoneKaffeesatz-VariableFont_wght.ttf") format("truetype");
+            font-style: oblique;
+            font-weight: bold;
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My contacts</title>
+       <style>
+        .vyrovnyat {
+            background: #ffffff;
+            padding: 3em 0;
+            text-align: left; /* выровнять текст и картинки по горизонтали */
+            font-size: 18px;
+            }
+        h1 { font-family: ZnikomitRegular; }
+
+        p {font-family: ZnikomitRegular; }
+        .centre {
+            background: #ffffff;
+            text-align: center; /* выровнять текст и картинки по горизонтали */
+            font-size: 24px
+            }
+         .button {
+            background-color: #ffffff;
+            padding: 8px 16px;
+            font-family: ZnikomitRegular;
+            font-size: 14px;
+            transition-duration: 0.4s;
+            color: black
+
+         }
+        .button:hover {
+            background-color: pink;
+            color: black;
+            padding: 9px 17px;
+            font-family: ZnikomitRegular;
+            font-size: 13px;
+        }
+        h1 { font-family: ZnikomitRegular; }
+        p {font-family: ZnikomitRegular; }
+    </style>
+</head>
+<body>
+
+
+
+<h1> Мои контакты</h1>
+
+
+<form action="" method="POST">
+    <label for="contact_name">Имя</label>
+    <input type="text" name="contact_name">
+    <p></p>
+    <label for="number">Номер</label>
+    <input type="text" name="number">
+    <p></p>
+<button class="button" type="submit">Добавить контакт</button>
+</form>
+
+
+
+<p>{{ message }}</p>
+
+<table class="table table-hover" align="center">
+    <tr>
+        <th>Имя</th>
+        <th>Номер</th>
+    </tr>
+    {% for contact in contacts_added %}
+    <tr>
+        <td>{{contact[0]}}</td>
+        <td>{{contact[1]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+<form action="/index" method="post">
+    <button class="button" type="submit">Назад</button>
+</form>
+
+
+
+
+
+</body>
+</html>
